@@ -158,7 +158,7 @@ const encontrado = numeros1.find((item) => {
 });
 console.log(encontrado);
 
-console.log("-------------------------")
+console.log("-------------------------");
 // reduce()
 // forEach()
 // some()
@@ -167,75 +167,83 @@ console.log("-------------------------")
 // includes()
 
 //.reduce()
-const numeros = [1, 2, 3, 4]
+const numeros = [1, 2, 3, 4];
 const inicio = 0;
-const somaDosNumerosArray = numeros.reduce((acumulador, valorArray) => acumulador + valorArray, inicio)
+const somaDosNumerosArray = numeros.reduce(
+  (acumulador, valorArray) => acumulador + valorArray,
+  inicio,
+);
 
-console.log(somaDosNumerosArray)
+console.log(somaDosNumerosArray);
 
-const numeros2 = [10, 25, 30, 5]
+const numeros2 = [10, 25, 30, 5];
 const inicio2 = 0;
 
-const somaDosNumeros = numeros2.reduce((soma, valor2) => soma + valor2, inicio2)
-const desconto = somaDosNumeros * 0.10
-const resultado = somaDosNumeros - desconto
+const somaDosNumeros = numeros2.reduce(
+  (soma, valor2) => soma + valor2,
+  inicio2,
+);
+const desconto = somaDosNumeros * 0.1;
+const resultado = somaDosNumeros - desconto;
 
-console.log(resultado)
+console.log(resultado);
 
 //forEach()
-const nomes = ["Ana", "João", "Carlos"]
-nomes.forEach(function(nome) {
-  console.log(nome)
-})
+const nomes = ["Ana", "João", "Carlos"];
+nomes.forEach(function (nome) {
+  console.log(nome);
+});
 
-const arrayNumeros = [2, 4, 6, 8]
-let arrayMulti = []
-arrayNumeros.forEach(numero => arrayMulti.push(numero * 3))
-console.log(arrayMulti)
+const arrayNumeros = [2, 4, 6, 8];
+let arrayMulti = [];
+arrayNumeros.forEach((numero) => arrayMulti.push(numero * 3));
+console.log(arrayMulti);
 
 //some()
-const numbers = [1, 2, 5, 8]
+const numbers = [1, 2, 5, 8];
 const par = (element) => element % 2 === 0;
-console.log(arrayMulti.some(par))
+console.log(arrayMulti.some(par));
 
-const idade = [12, 15, 17, 19]
-const maiorDeIdade = (maiorIdade) => maiorIdade > 17
-console.log(idade.some(maiorDeIdade))
+const idade = [12, 15, 17, 19];
+const maiorDeIdade = (maiorIdade) => maiorIdade > 17;
+console.log(idade.some(maiorDeIdade));
 
 //every()
-const number = [2, 4, 6, 7]
-const pares = number.every(num => num % 2 === 0);
-console.log(pares)
+const number = [2, 4, 6, 7];
+const pares = number.every((num) => num % 2 === 0);
+console.log(pares);
 
-const notas = [7, 8, 9, 6]
-const passou = notas.every(nota => nota >= 6 )
-console.log(passou)
+const notas = [7, 8, 9, 6];
+const passou = notas.every((nota) => nota >= 6);
+console.log(passou);
 
 //indexOf()
-const frutas1 = ["maçã", "banana", "uva"]
-const indiceFruta = frutas1.indexOf("banana")
-console.log(indiceFruta)
+const frutas1 = ["maçã", "banana", "uva"];
+const indiceFruta = frutas1.indexOf("banana");
+console.log(indiceFruta);
 
-const numeroArray = [10, 20, 30, 40]
-const indiceNumero = numeroArray.indexOf(25)
-const verificarNumero = indiceNumero >=0 ? "Existe 25 no array" : "Não existe 25 no array" //Função ternaria
+const numeroArray = [10, 20, 30, 40];
+const indiceNumero = numeroArray.indexOf(25);
+const verificarNumero =
+  indiceNumero >= 0 ? "Existe 25 no array" : "Não existe 25 no array"; //Função ternaria
 
-console.log(verificarNumero)
+console.log(verificarNumero);
 
 //includes()
 //Dado um array use includes para verificar se o  numero 3 existe
-const numeros3 = [1, 2, 3, 4]
-const numeroExiste = numeros3.includes(3)
-console.log(numeroExiste)
+const numeros3 = [1, 2, 3, 4];
+const numeroExiste = numeros3.includes(3);
+console.log(numeroExiste);
 
-// dado um array ["azul", "vermelho", "verde"], 
+// dado um array ["azul", "vermelho", "verde"],
 //use includes para verificar se "amarelo" esta presente
-const cores = ["azul", "vermelho", "verde"]
-const temCor = cores.includes("amarelo")
-const resultadoCores = temCor === true ? "Amarelo esta presente" : "Amarelo não esta presente"
-console.log(resultadoCores)
+const cores = ["azul", "vermelho", "verde"];
+const temCor = cores.includes("amarelo");
+const resultadoCores =
+  temCor === true ? "Amarelo esta presente" : "Amarelo não esta presente";
+console.log(resultadoCores);
 
 //verifique se o elemento abaixo é um array, se sim, log o valor "é array"
-const lista = []
-const eUmaArrey = Array.isArray(lista) === true ? "é array" : "Não é um array"
-console.log(eUmaArrey)
+const lista = [];
+const eUmaArrey = Array.isArray(lista) === true ? "é array" : "Não é um array";
+console.log(eUmaArrey);

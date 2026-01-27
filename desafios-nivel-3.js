@@ -32,6 +32,43 @@ calcular(25, 5, "multiplicar");
 //Crie uma função chamada analisarVendas que receba um array de objetos representando vendas
 // (cada objeto com: produto, quantidade, valorUnitario). A função deve retornar um objeto com:
 // totalVendas, produtoMaisVendido, valorTotalArrecadado e mediaValorPorVenda.
+const vendas = [
+  {
+    produto: "monster",
+    quantidade: "28",
+    valorUnitario: "12",
+  },
+  {
+    produto: "redbul",
+    quantidade: "20",
+    valorUnitario: "14",
+  },
+  {
+    produto: "baly",
+    quantidade: "12",
+    valorUnitario: "8",
+  },
+];
+
+function analisarVendas() {
+  const totalVendas =
+    vendas[0].quantidade + vendas[1].quantidade + vendas[2].quantidade;
+
+  let produtoMaisVendido;
+  if (
+    vendas[0].quantidade > vendas[1].quantidade &&
+    vendas[0].quantidade > vendas[2].quantidade
+  ) {
+    produtoMaisVendido = vendas[0].produto;
+  } else if (
+    vendas[1].quantidade > vendas[0].quantidade &&
+    vendas[1].quantidade > vendas[2].quantidade
+  ) {
+    produtoMaisVendido = vendas[1].quantidade;
+  } else {
+    produtoMaisVendido = vendas[2].quantidade;
+  }
+}
 
 //Questão 43 - Nível 3 ⭐⭐⭐
 //Crie um sistema de notas escolares com as seguintes funções:
