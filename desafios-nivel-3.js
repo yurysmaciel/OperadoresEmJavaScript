@@ -72,13 +72,14 @@ function analisarVendas() {
 
 //Questão 43 - Nível 3 ⭐⭐⭐
 //Crie um sistema de notas escolares com as seguintes funções:
-
 //adicionarNota(aluno, nota): adiciona uma nota ao array de notas do aluno
 //calcularMedia(aluno): calcula a média das notas
 //verificarSituacao(aluno): retorna Aprovado/Recuperação/Reprovado
 //gerarBoletim(aluno): retorna um objeto completo com nome, notas, média e situação
 //Questão 44 - Nível 3 ⭐⭐⭐
-//Crie uma função chamada simularEmprestimo que receba: valorEmprestimo, taxaJurosMensal e numeroParcelas. A função deve calcular o valor total a pagar com juros compostos e retornar um objeto detalhado com: valorOriginal, taxaJuros, parcelas, valorParcela, totalJuros e valorTotal.
+//Crie uma função chamada simularEmprestimo que receba: valorEmprestimo, taxaJurosMensal e numeroParcelas. 
+// A função deve calcular o valor total a pagar com juros compostos e retornar um objeto detalhado com: 
+// valorOriginal, taxaJuros, parcelas, valorParcela, totalJuros e valorTotal.
 
 //Questão 45 - Nível 3 ⭐⭐⭐
 //Crie um mini sistema de e-commerce com:
